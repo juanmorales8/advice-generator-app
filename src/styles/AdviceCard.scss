@@ -1,0 +1,13 @@
+.Advice-card {
+  background-color: var(--dark-grayish-blue);
+  width: 30%;
+  margin: auto;
+  position: relative;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 20px 20px 30px 0px var(--dark-blue);
+}

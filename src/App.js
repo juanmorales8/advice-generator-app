@@ -1,7 +1,10 @@
 import "./styles/App.scss";
+import {CardContainer} from "./containers/CardContainer";
 
 function App() {
-  return <h1 className="App">Welcome to Advice Generator App</h1>;
+  return (<div>
+    <CardContainer/>
+  </div>);
 }
 
 export { App };
