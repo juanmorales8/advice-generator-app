@@ -11,3 +11,30 @@
   text-align: center;
   box-shadow: 20px 20px 30px 0px var(--dark-blue);
 }
+
+.pattern-divider {
+  background-image: url("../assets/images/pattern-divider-desktop.svg");
+  width: 100%;
+  height: 15px;
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+  .Advice-card {
+    width: 50%;
+  }
+
+  .pattern-divider{
+    background-image: url("../assets/images/pattern-divider-mobile.svg");
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .Advice-card {
+    width: 80%;
+    margin-top: 20vh;
+  }
+}

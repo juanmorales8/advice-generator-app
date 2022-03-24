@@ -18,7 +18,7 @@ function AdviceCard() {
           <AdviceText adviceText={data.slip.advice} />
         </>
       )}
-
+      <div className="pattern-divider"></div>
       <IconDice handleClick={handleGetAdvice} />
     </section>
   );
