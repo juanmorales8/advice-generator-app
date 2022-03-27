@@ -1,13 +1,13 @@
 .Advice-card {
-  background-color: var(--dark-grayish-blue);
+  position: relative;
   width: 30%;
   margin: auto;
-  position: relative;
-  border-radius: 10px;
-  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: var(--dark-grayish-blue);
   text-align: center;
   box-shadow: 20px 20px 30px 0px var(--dark-blue);
 }
@@ -15,11 +15,11 @@
 .pattern-divider {
   background-image: url("../assets/images/pattern-divider-desktop.svg");
   width: 100%;
+  margin-bottom: 3rem;
   height: 15px;
   background-size: 90%;
   background-repeat: no-repeat;
   background-position: center;
-  margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 750px) {
@@ -27,7 +27,7 @@
     width: 50%;
   }
 
-  .pattern-divider{
+  .pattern-divider {
     background-image: url("../assets/images/pattern-divider-mobile.svg");
   }
 }

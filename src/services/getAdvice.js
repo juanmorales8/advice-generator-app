@@ -1,20 +1,21 @@
 import { api } from "../api/advice_slip";
 
 function getRandomAdvice() {
-  return fetch(api.url)
+  const response = fetch(api.url)
     .then((res) => {
-      if (res.ok) {
-        return res.json();
-      } else {
-        throw Error(res.statusText);
-      }
+      console.log("Res: ", res);
+      return res.ok ? res.json() : Promise.reject(res);
     })
-    .then((json) => {
-      return json;
-    })
-    .catch((err) => {
-      return err;
+    .then((jsonRes) => jsonRes)
+    .catch((error) => {
+      return {
+        err: true,
+        errorCode: error.status || "00",
+        errorMessage: error.statusText || "An error ocurred",
+      };
     });
+
+  return response;
 }
 
 export { getRandomAdvice };

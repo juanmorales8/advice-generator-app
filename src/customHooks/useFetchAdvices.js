@@ -14,8 +14,12 @@ function useFetchAdvices() {
   const handleGetAdvice = () => {
     setLoading(true);
     getRandomAdvice().then((res) => {
-      setData(res);
-      console.log(res);
+      if (res.err === undefined) {
+        setData(res);
+        setError(null);
+      } else {
+        setError(res);
+      }
       setLoading(false);
     });
   };

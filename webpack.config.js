@@ -26,6 +26,7 @@ module.exports = {
           options: {
             /*Allow use react without import it in each file*/
             presets: [["@babel/preset-react", { runtime: "automatic" }]],
+            plugins: ["@babel/plugin-transform-runtime"],
           },
         },
       },
