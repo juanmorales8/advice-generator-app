@@ -2,7 +2,7 @@ import { IconDice } from "./iconDice";
 import { Loader } from "./Loader";
 import { AdviceTitle } from "./AdviceTitle";
 import { AdviceText } from "./AdviceText";
-import { useFetchAdvices } from "../customHooks/useFetchAdvices";
+import { useFetchAdvices } from "@customHooks/useFetchAdvices";
 import "../styles/AdviceCard.scss";
 import { ErrorMessage } from "./ErrorMessage";
 

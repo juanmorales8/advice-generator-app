@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useEffect } from "react";
-import { getRandomAdvice } from "../services/getAdvice";
+import { getRandomAdvice } from "@services/getAdvice";
 
 function useFetchAdvices() {
   const [data, setData] = useState(null);

@@ -7,11 +7,21 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    clean:true,
+    clean: true,
   },
 
   resolve: {
     extensions: [".js", ".jsx"],
+    alias: {
+      "@images": path.resolve(__dirname, "src/assets/images"),
+      "@fonts": path.resolve(__dirname, "src/assets/fonts"),
+      "@components": path.resolve(__dirname, "src/components"),
+      "@containers": path.resolve(__dirname, "src/containers"),
+      "@customHooks": path.resolve(__dirname, "src/customHooks"),
+      "@services": path.resolve(__dirname, "src/services"),
+      "@styles": path.resolve(__dirname, "src/styles"),
+      "@api": path.resolve(__dirname, "src/api"),
+    },
   },
 
   mode: "development",
@@ -24,7 +34,7 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            /*Allow use react without import it in each file*/
+            /*Allow using react without import it in each file*/
             presets: [["@babel/preset-react", { runtime: "automatic" }]],
             plugins: ["@babel/plugin-transform-runtime"],
           },

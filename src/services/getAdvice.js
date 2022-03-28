@@ -1,4 +1,4 @@
-import { api } from "../api/advice_slip";
+import { api } from "@api/advice_slip";
 
 function getRandomAdvice() {
   const response = fetch(api.url)
