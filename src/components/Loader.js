@@ -1,5 +1,5 @@
-import loader from "../assets/images/loader.svg";
-import "../styles/Loader.scss";
+import loader from "@images/loader.svg";
+import "@styles/Loader.scss";
 
 function Loader() {
   return (

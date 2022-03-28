@@ -1,4 +1,4 @@
-import "../styles/AdviceTitle.scss";
+import "@styles/AdviceTitle.scss";
 
 function AdviceTitle({ adviceId }) {
   return <h2 className="Advice-title">ADVICE #{adviceId}</h2>;

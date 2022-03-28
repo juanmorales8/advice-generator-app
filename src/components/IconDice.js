@@ -1,5 +1,5 @@
-import iconDice from "../assets/images/icon-dice.svg";
-import "../styles/IconDice.scss";
+import iconDice from "@images/icon-dice.svg";
+import "@styles/IconDice.scss";
 
 function IconDice({handleClick}) {
   return (

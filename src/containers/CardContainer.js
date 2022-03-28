@@ -1,5 +1,5 @@
-import { AdviceCard } from "../components/AdviceCard";
-import "../styles/CardContainer.scss";
+import { AdviceCard } from "@components/AdviceCard";
+import "@styles/CardContainer.scss";
 
 function CardContainer(){
     return(

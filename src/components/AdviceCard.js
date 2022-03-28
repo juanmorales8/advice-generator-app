@@ -1,9 +1,9 @@
-import { IconDice } from "./iconDice";
+import { IconDice } from "./IconDice";
 import { Loader } from "./Loader";
 import { AdviceTitle } from "./AdviceTitle";
 import { AdviceText } from "./AdviceText";
 import { useFetchAdvices } from "@customHooks/useFetchAdvices";
-import "../styles/AdviceCard.scss";
+import "@styles/AdviceCard.scss";
 import { ErrorMessage } from "./ErrorMessage";
 
 function AdviceCard() {
